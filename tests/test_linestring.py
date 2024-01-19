@@ -1,7 +1,7 @@
 import pytest
 from pydantic import ValidationError
 
-from geo_modeler.linestring import LineString
+from src.linestring import LineString
 
 
 def test_linestring_initialization_with_valid_coordinates_and_type():

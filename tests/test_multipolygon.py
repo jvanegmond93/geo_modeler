@@ -1,6 +1,6 @@
 import pytest
 
-from geo_modeler.multipolygon import MultiPolygon
+from src.multipolygon import MultiPolygon
 
 
 def test_valid_multipolygon_creation():

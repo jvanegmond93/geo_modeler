@@ -1,4 +1,4 @@
-# GeoModeler/geo_modeler/polygon.py
+# GeoModeler/src/polygon.py
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 from typing import List, Annotated, Optional

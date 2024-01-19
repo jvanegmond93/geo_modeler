@@ -1,4 +1,4 @@
-# GeoModeler/geo_modeler/multipoint.py
+# GeoModeler/src/multipoint.py
 from pydantic import field_validator
 from typing import List, Annotated, Optional
 from pydantic import BaseModel, ConfigDict, Field

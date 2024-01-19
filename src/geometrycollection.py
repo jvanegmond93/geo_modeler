@@ -1,11 +1,11 @@
-# GeoModeler/geo_modeler/geometrycollection.py
+# GeoModeler/src/geometrycollection.py
 
 from typing import Annotated, Union
 from typing import Literal
 
 from pydantic import BaseModel, Field, ConfigDict, field_validator
 
-from geo_modeler import Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon
+from src import Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon
 
 
 class GeometryCollection(BaseModel, extra='forbid'):

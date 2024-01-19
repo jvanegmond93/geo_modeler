@@ -1,4 +1,4 @@
-# GeoModeler/geo_modeler/multipolygon.py
+# GeoModeler/src/multipolygon.py
 
 from typing import List, Annotated, Optional
 from pydantic import BaseModel, ConfigDict, Field, field_validator

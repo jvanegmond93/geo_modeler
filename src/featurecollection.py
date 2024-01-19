@@ -1,10 +1,10 @@
-# GeoModeler/geo_modeler/featurecollection.py
+# GeoModeler/src/featurecollection.py
 from typing import List, Optional, Annotated, Literal
 
 from pydantic import BaseModel
 from pydantic import field_validator, Field, BeforeValidator
 
-from geo_modeler import Feature
+from src import Feature
 from .validators import validate_bbox, type_validator
 
 

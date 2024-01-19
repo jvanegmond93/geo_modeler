@@ -1,4 +1,4 @@
-# GeoModeler/geo_modeler/point.py
+# GeoModeler/src/point.py
 from typing import List, Annotated, Optional
 from pydantic import ConfigDict, BaseModel, field_validator
 from pydantic import Field

@@ -16,10 +16,10 @@ These models are implemented using the Pydantic library, which provides runtime 
 
 ## Installation
 
-This project requires Python 3.7 or higher. You can install it using pip:
+This project requires Python 3.10 or higher. You can install it using pip:
 
 ```bash
-pip install geojson-models
+pip install geo-modeler
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ pip install geojson-models
 Here is an example of how to create a Point object:
 
 ```python
-from geo_modeler import Point
+from src import Point
 
 point = Point(type='Point', coordinates=[1.0, 2.0])
 ```
@@ -53,7 +53,7 @@ When dumping the model to a GeoJSON string using the `model_dump_json` method, y
 Here is an example of how to use these features:
 
 ```python
-from geo_modeler import FeatureCollection, Point
+from src import FeatureCollection, Point
 
 # Initialize a FeatureCollection with data Point from a JSON string.
 feature_collection_json = '{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"id":"1","name":"Litter Bin","description":"Litter Bin","type":"Litter Bin","colour":"Green","location":"Leeds","location_type":"Street","location_subtype":"Road","location_name":"Leeds","latitude":"53.71583","longitude":"-1.74448","easting":"429000","northing":"433000","northing":"433000","postcode_sector":"LS1","postcode_district":"LS","postcode_area":"LS","uprn":"100335","organisation":"Leeds City Council","organisation_uri":"http://opendatacommunities.org/id/leeds-city-council","organisation_label":"Leeds City Council","uri":"http://opendatacommunities.org/id/litter-bin/leeds/1","label":"Litter Bin","notation":"1","notation_uri":"http://opendatacommunities.org/id/litter-bin/leeds/1","notation_label":"1","notation_type":"http://opendatacommunities.org/def/litter-bin/leeds/notation","notation_type_label":"Notation"},"geometry":{"type":"Point","coordinates":[-1.74448,53.71583]}}]}'

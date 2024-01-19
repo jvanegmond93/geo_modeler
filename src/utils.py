@@ -1,4 +1,4 @@
-# GeoModeler/geo_modeler/utils.py
+# GeoModeler/src/utils.py
 from typing import List, Union
 
 

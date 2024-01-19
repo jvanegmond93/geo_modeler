@@ -1,6 +1,6 @@
 import pytest
 
-from geo_modeler import MultiPoint
+from src import MultiPoint
 
 
 def test_multipoint_initialization_with_valid_coordinates_and_type():

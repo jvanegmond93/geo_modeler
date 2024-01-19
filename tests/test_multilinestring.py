@@ -1,5 +1,5 @@
 import pytest
-from geo_modeler.multilinestring import MultiLineString
+from src.multilinestring import MultiLineString
 
 
 def test_multilinestring_initialization_with_three_coordinates_xyz():

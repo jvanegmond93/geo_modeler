@@ -1,10 +1,10 @@
-# GeoModeler/geo_modeler/feature.py
+# GeoModeler/src/feature.py
 
 from typing import Annotated, Any, Dict, Union, Optional, List, Literal
 
 from pydantic import BaseModel, field_validator, Field, ConfigDict, BeforeValidator, AfterValidator
 
-from geo_modeler import Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon, GeometryCollection
+from src import Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon, GeometryCollection
 from .validators import validate_bbox, type_validator
 
 # FeatureType = Annotated[str, BeforeValidator(type_validator('Feature'))]

@@ -1,4 +1,4 @@
-# GeoModeler/geo_modeler/__init__.py
+# GeoModeler/src/__init__.py
 
 from .point import Point
 from .multipoint import MultiPoint

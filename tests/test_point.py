@@ -1,5 +1,5 @@
 import pytest
-from geo_modeler.point import Point
+from src.point import Point
 
 
 def test_point_initialization_with_valid_coordinates_and_type():

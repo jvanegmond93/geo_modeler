@@ -1,4 +1,4 @@
-# GeoModeler/geo_modeler/multilinestring.py
+# GeoModeler/src/multilinestring.py
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 from typing import List, Annotated, Optional
 from typing_extensions import Literal
