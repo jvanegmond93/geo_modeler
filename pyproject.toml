@@ -1,0 +1,35 @@
+[project]
+name = "geo_modeler"
+version = "0.1.dev0"
+description = "GeoModeler is a Python project based on pydantic, designed to model and validate geojson data structures such as points, lines, and polygons. It provides a set of tools and validators for working with GeoJSON data."
+authors = [{name = "jvanegmond", email = "jvanegmond@silverbirchgeospatial.com"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["geojson", "pydantic", "validation", "geospatial", "data-modeling"]  # Add relevant keywords
+
+[project.urls]
+homepage = ""  # Add your project's homepage URL if available
+
+[build-system]
+requires = ["pdm-pep517"]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm]
+#scripts = {
+#    test = "pytest"
+#}
+
+[project.dependencies]
+pydantic = ">=2.5.3"  # Specify the minimum version requirement for pydantic
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-cov"]
+
+
+[project.classifiers]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
