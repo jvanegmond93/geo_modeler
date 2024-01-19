@@ -1,25 +1,39 @@
 name: Publish Python Package to PyPI
 
+
 on:
   release:
     types: [created]
 
 jobs:
-  build-and-publish:
+  pypi-publish:
+    name: Upload release to PyPI
     runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/geo-modeler
+    permissions:
+      id-token: write  # IMPORTANT: this permission is mandatory for trusted publishing
+
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.12
+    - name: Check out the code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.12'
+        python-version: '3.12' # or any version you need
+
     - name: Install pdm
       run: pip install pdm
+
     - name: Install dependencies
       run: pdm install
-    - name: Build package
+
+    - name: Build the package
       run: pdm build
-    - name: Publish to PyPI
+
+    - name: Publish package distributions to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         password: ${{ secrets.PYPI_API_TOKEN }}
