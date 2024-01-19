@@ -22,7 +22,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.12' # or any version you need
+        python-version: '3.12'
 
     - name: Install pdm
       run: pip install pdm
