@@ -1,0 +1,26 @@
+name: Publish Python Package to PyPI
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.12' # Specifying Python 3.12
+    - name: Install pdm
+      run: pip install pdm
+    - name: Install dependencies
+      run: pdm install
+    - name: Build package
+      run: pdm build
+    - name: Publish to PyPI
+      uses: pypa/gh-action-pypi-publish@master
+      with:
+        user: __token__
+        password: ${{ secrets.PYPI_API_TOKEN }} # Using the PyPI API token
