@@ -2,7 +2,7 @@
 
 [project]
 name = "GeoModeler"
-version = "0.1.dev1"
+version = "0.1.dev2"
 description = "GeoModeler is a Python project based on pydantic, designed to model and validate geojson data structures such as points, lines, and polygons. It provides a set of tools and validators for working with GeoJSON data."
 authors = [{name = "jvanegmond", email = "jvanegmond@silverbirchgeospatial.com"}]
 license = {text = "MIT"}
