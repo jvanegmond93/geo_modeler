@@ -27,6 +27,9 @@ jobs:
     - name: Install pdm
       run: pip install pdm
 
+    - name: Clean up previous builds
+      run: rm -rf dist/*
+
     - name: Install dependencies
       run: pdm install
 
