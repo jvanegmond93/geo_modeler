@@ -3,13 +3,13 @@ import json
 import pytest
 from pydantic import ValidationError
 
-from src.geometrycollection import GeometryCollection
-from src.linestring import LineString
-from src.multilinestring import MultiLineString
-from src.multipoint import MultiPoint
-from src.multipolygon import MultiPolygon
-from src.point import Point
-from src.polygon import Polygon
+from GeoModeler import GeometryCollection
+from GeoModeler import LineString
+from GeoModeler.multilinestring import MultiLineString
+from GeoModeler import MultiPoint
+from GeoModeler.multipolygon import MultiPolygon
+from GeoModeler import Point
+from GeoModeler import Polygon
 
 valid_geometries = [
     Point(coordinates=[0.0, 0.0]),

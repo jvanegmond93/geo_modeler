@@ -1,6 +1,6 @@
 # tests/test_polygon.py
 import pytest
-from src.polygon import Polygon
+from GeoModeler import Polygon
 
 
 def test_polygon_initialization_with_valid_interior_ring():

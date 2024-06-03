@@ -5,7 +5,7 @@ from typing import Literal
 
 from pydantic import BaseModel, Field, ConfigDict, field_validator
 
-from src import Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon
+from GeoModeler import Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon
 
 
 class GeometryCollection(BaseModel, extra='forbid'):

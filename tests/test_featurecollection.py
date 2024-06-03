@@ -1,6 +1,6 @@
 import pytest
-from src.featurecollection import FeatureCollection
-from src.feature import Feature
+from GeoModeler import FeatureCollection
+from GeoModeler.feature import Feature
 
 
 def test_feature_collection_with_valid_data():

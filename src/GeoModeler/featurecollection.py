@@ -4,7 +4,7 @@ from typing import List, Optional, Annotated, Literal
 from pydantic import BaseModel
 from pydantic import field_validator, Field, BeforeValidator
 
-from src import Feature
+from GeoModeler import Feature
 from .validators import validate_bbox, type_validator
 
 
