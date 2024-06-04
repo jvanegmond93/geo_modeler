@@ -1,7 +1,9 @@
 import json
 
 import pytest
-from GeoModeler import Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon, GeometryCollection, Feature
+
+from GeoModeler import Feature, Point
+
 
 def test_feature_creation_with_valid_data():
     feature = Feature(id="123", geometry=Point(coordinates=[0, 0]))
