@@ -35,6 +35,10 @@ class MultiPoint(BaseModel, extra='forbid'):
     model_validate(v: dict)
         Validates a dictionary representation of the model. Raises a ValueError if the dictionary is not a valid MultiPoint.
 
+    model_validate_json(v: str)
+        Validates a GeoJSON string representation of the model. Raises a ValueError if the string is not a valid MultiPoint.
+
+
     Examples
     --------
     multi_point = MultiPoint(type='MultiPoint', coordinates=[[1.0, 2.0], [3.0, 4.0]])
